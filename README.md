@@ -48,3 +48,36 @@ julia> import Pkg; Pkg.add("IJulia")
 ```
 Lo instaló en `~/.julia/environments/v1.8/`. Una ubicación global.
 
+# Proyecto Baseline en Python
+
+## Requerimientos previos
+- Python 3.8 (importante para Keras).
+- Placa de Video Nvidia (sino la instalación de Keras tendrá que ser personalizada)
+
+## Creación de ambiente virtual para el proyecto
+Con virtualenv. (Se pueden usar otras como el asistente de Pycharm o cualquier otro)
+```
+virtualenv venv -p /usr/bin/python3.8
+```
+
+## Preparación del ambiente
+```
+pip install -r requirements.txt
+```
+
+## Ubicación de los archivos.
+Para que el notebook funcione las imágentes deben estar dentro de una carpeta llamada
+histopathologic-cancer-detection dentro de input un nivel arriba del proyecto. 
+Estructura
+```
+├── input
+│   ├── histopathologic-cancer-detection
+│   │   ├── test
+│   │   ├── train
+│   │   ├── sample_submission.csv
+│   │   ├── train_labels.csv
+├── TDL-Pokemones
+│   ├── README.md
+│   ├── *.ipnyb
+
+```
