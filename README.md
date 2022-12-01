@@ -48,6 +48,13 @@ julia> import Pkg; Pkg.add("IJulia")
 ```
 Lo instaló en `~/.julia/environments/v1.8/`. Una ubicación global.
 
+#### Failed to load module "canberra-gtk-module"
+
+Hay que instalar la librería.
+
+`sudo apt-get install libcanberra-gtk-module libcanberra-gtk0`
+
+
 # Proyecto Baseline en Python
 
 ## Requerimientos previos
